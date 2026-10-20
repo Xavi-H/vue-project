@@ -1,11 +1,13 @@
 <script setup>
-import {ref} from 'vue'
+import { ref, computed } from 'vue'
 
-const mostrar = ref(true)
+// Llista de tasques
+const tasques = ref([
+    {id: 1, titol: 'Tasca 1', completada: false}
+])
 
 </script>
 
 <template>
-    <button @click="mostrar = !mostrar">Alternar Visibilitat</button>
-    <p v-show="mostrar">Aquest text es mostra o amaga sense eliminar-lo del DOM</p>
+    <h1>Gestor de tasques</h1>
 </template>

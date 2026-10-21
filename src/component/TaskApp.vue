@@ -33,7 +33,7 @@ function afegirTasca() {
   }
 
   tasques.value.push({
-    id: tasques.length + 1, // todo
+    id: tasques.length, // TODO: arreglar
     titol: titol,
     completada: false
   })
@@ -92,5 +92,31 @@ function eliminarTasca(id) {
 .completada {
   text-decoration: line-through;
   color: gray;
+}
+main {
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
 }
 </style>

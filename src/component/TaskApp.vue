@@ -33,7 +33,7 @@ function afegirTasca() {
   }
 
   tasques.value.push({
-    id: tasques.length, // TODO: arreglar
+    id: Date.now(), // Genera un id a partir de la data actual en milisegons, aixi es unic
     titol: titol,
     completada: false
   })
